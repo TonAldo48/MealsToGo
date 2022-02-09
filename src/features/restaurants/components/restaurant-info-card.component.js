@@ -1,40 +1,20 @@
 import React from 'react';
-import { Text, StyleSheet, View } from "react-native";
-import styled from "styled-components/native";
-import { Card } from "react-native-paper";
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
-
-const Title = styled.Text`
-    font-family: ${(props) => props.theme.fonts.heading};
-    font-size: ${(props) => props.theme.sizes[1]}
-`;
-const Address = styled.Text`
-    font-family: ${(props) => props.theme.fonts.monospace};
-`;
-
-const RestaurantCard = styled(Card)`
-    padding: ${(props) => props.theme.sizes[1]};
-`;
-
-const Info = styled(Card)`
-    padding: ${(props) => props.theme.sizes[1]};
-`;
-
-const Rating = styled.View`
-    flex-direction: row;
-    padding-top: ${(props) => props.theme.sizes[0]};
-    padding-bottom: ${(props) => props.theme.sizes[0]};
-    justify-content: space-between;
-`;
-
-const RatingIcons = styled.View`
-    flex-direction: row;
-`;
+import { Text } from "../../../components/typography/text.component.js"
+import { Spacer } from "../../../components/spacer/spacer.component.js";
+import { 
+    Address, 
+    RestaurantCard, 
+    Info, 
+    Rating, 
+    RatingIcons,
+    CardImage
+} from './restaurant-info-card.style';
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
     const {
         name = "Some restaurant",
-        photos = ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Waakye_Festival_05.jpg/220px-Waakye_Festival_05.jpg"],
+        photos = ["https://www.foodiesfeed.com/wp-content/uploads/2015/03/basic-italian-pizza-margherita-1024x683.jpg"],
         address = "100 random street",
         rating = 3.5,
         isClosedTemporarily = true,
@@ -45,18 +25,19 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
     return (
         <RestaurantCard elevation={8}>
-            <RestaurantCard.Cover key={name} source={{ uri: photos[0] }} />
+            <CardImage key={name} source={{ uri: photos[0] }} />
             <Info>
-                <Title>{name}</Title>
+                {/* <Spacer position="bottom" size="small"> */}
+                    <Text variant="caption">{name}</Text>
+                {/* </Spacer> */}
                 <Rating>
                     <RatingIcons>
                         {ratingArray.map(() => (<Ionicons name='star' size={24} color='yellow' />))}
                     </RatingIcons>
-                    <MaterialIcons name='store' size={24} color={(isOpenNow ? 'green':'red')} />
+                    <MaterialIcons name='store' size={24} color={(isOpenNow ? 'green' : 'red')} />
                 </Rating>
                 <Address>{address}</Address>
             </Info>
-
         </RestaurantCard>
     );
 };

@@ -10,8 +10,60 @@ import {
   useFonts as useLato,
   Lato_400Regular,
 } from '@expo-google-fonts/lato';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { View, Text } from "react-native";
+import { SafeArea } from "./src/components/utilities/safe_area.component";
+import { Ionicons } from '@expo/vector-icons';
 
+function SettingsScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>SETTINGS SCREEN!!</Text>
+    </View>
+  );
+}
 
+function MapScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>MAP SCREEN!</Text>
+    </View>
+  );
+}
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+
+          if (route.name === 'Restaurants') {
+            iconName = focused
+              ? 'ios-restaurant'
+              : 'ios-restaurant-outline';
+          } else if (route.name === 'Map') {
+            iconName = focused ? 'map' : 'map-outline';
+          } else if (route.name === 'Settings') {
+            iconName = focused ? 'ios-settings' : 'ios-settings-outline';
+          }
+
+          // You can return any component that you like here!
+          return <Ionicons name={iconName} size={size} color={color} />;
+        },
+        tabBarActiveTintColor: 'tomato',
+        tabBarInactiveTintColor: 'gray',
+      })}
+    >
+      <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
+      <Tab.Screen name="Map" component={MapScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
+    </Tab.Navigator>
+  );
+}
 export default function App() {
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
@@ -20,14 +72,18 @@ export default function App() {
     Lato_400Regular,
   });
 
-  if(!oswaldLoaded || !latoLoaded) {
+  if (!oswaldLoaded || !latoLoaded) {
     return null;
   }
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <RestaurantsScreen />
+        <NavigationContainer>
+
+          <MyTabs />
+
+        </NavigationContainer>
       </ThemeProvider>
     </>
   );
