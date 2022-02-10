@@ -13,8 +13,9 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text } from "react-native";
-import { SafeArea } from "./src/components/utilities/safe_area.component";
 import { Ionicons } from '@expo/vector-icons';
+import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
+
 
 function SettingsScreen() {
   return (
@@ -79,11 +80,11 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <NavigationContainer>
-
-          <MyTabs />
-
-        </NavigationContainer>
+        <RestaurantsContextProvider>
+          <NavigationContainer>
+            <MyTabs />
+          </NavigationContainer>
+        </RestaurantsContextProvider>
       </ThemeProvider>
     </>
   );

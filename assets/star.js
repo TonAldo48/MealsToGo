@@ -1,183 +1,55 @@
-export default `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="28.674372mm"
-   height="28.668304mm"
-   viewBox="0 0 101.6021 101.58061"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="five_pointed_star.svg">
-  <title
-     id="title3855">Gold Five-Pointed Star</title>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="50.551598"
-     inkscape:cy="45.702597"
-     inkscape:document-units="px"
-     inkscape:current-layer="svg2"
-     showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="753"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <defs
-     id="defs4" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Gold Five-Pointed Star</dc:title>
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:date>2015-03-01</dc:date>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>mazeo</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:publisher>
-          <cc:Agent>
-            <dc:title>openclipart.org</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:language>en</dc:language>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>star</rdf:li>
-            <rdf:li>gold</rdf:li>
-            <rdf:li>five-pointed</rdf:li>
-            <rdf:li>5-pointed</rdf:li>
-            <rdf:li>five</rdf:li>
-            <rdf:li>pointed</rdf:li>
-            <rdf:li>gold star</rdf:li>
-            <rdf:li>five-pointed star</rdf:li>
-            <rdf:li>5-pointed star</rdf:li>
-            <rdf:li>3D</rdf:li>
-            <rdf:li>3-D</rdf:li>
-            <rdf:li>three-dimensional</rdf:li>
-            <rdf:li>three dimensional</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
-        <dc:description>A 3D gold-colored 5-pointed star</dc:description>
-        <dc:contributor>
-          <cc:Agent>
-            <dc:title>mazeo</dc:title>
-          </cc:Agent>
-        </dc:contributor>
-      </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="layer1"
-     inkscape:groupmode="layer"
-     inkscape:label="Layer 1"
-     transform="translate(-324.4484,-469.34134)" />
-  <g
-     id="g3411"
-     transform="translate(-4.5871759e-6,4.6661843e-6)">
-    <path
-       inkscape:connector-curvature="0"
-       d="m 49.4319,79.001906 l 1.1197,-23.1239 L 18.5018,100.58791 Z M 81.2953,101.58061 L 50.5516,55.878006 l -1.1197,23.1239 z m 0,0 L 71.2285,64.137706 l -20.6769,-8.2597 z m -62.7935,-0.9927 L 50.5516,55.878006 l -21.3689,6.0316 z M 50.5516,55.878006 L -3.0422191e-6,37.807606 L 29.1827,61.909606 Z m 0,0 l 20.6769,8.2597 l 30.3736,-24.7238 z m 0,0 L 38.4647,36.481906 L -3.0422192e-6,37.807606 Z m 0,0 l 51.0505,-16.4641 l -37.1517,-1.555 z m 0,0 l 13.8988,-18.0191 L 51.3588,5.7556778e-6 Z m 0,0 L 51.3588,5.7556778e-6 L 38.4647,36.481906 Z"
-       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-       id="path3829-7" />
-    <g
-       inkscape:label="C:\tmp\objmodels\star02:x90.00:y0.00:z0.00:x0.00:y0.00:z0.00"
-       transform="translate(50.551603,55.877997)"
-       id="g3809">
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:18"
-         style="fill:#8d8d1c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="m 0,0 l 0.8072,-55.878 l -12.8941,36.4819 z"
-         id="path3811" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:19"
-         style="fill:#a5a521;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M 0,0 L 13.8988,-18.0191 L 0.8072,-55.878 Z"
-         id="path3813" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:10"
-         style="fill:#91911d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="m 0,0 l 51.0505,-16.4641 l -37.1517,-1.555 z"
-         id="path3815" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:17"
-         style="fill:#91911d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="m 0,0 l -12.0869,-19.3961 l -38.4647,1.3257 z"
-         id="path3817" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:11"
-         style="fill:#b4b424;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M 0,0 L 20.6769,8.2597 L 51.0505,-16.4641 Z"
-         id="path3819" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:16"
-         style="fill:#9e9e1f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="m 0,0 l -50.5516,-18.0704 l 29.1827,24.102 z"
-         id="path3821" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:15"
-         style="fill:#8e8e1c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M -32.0498,44.7099 L 0,0 l -21.3689,6.0316 z"
-         id="path3823" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:12"
-         style="fill:#a6a621;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M 30.7437,45.7026 L 20.6769,8.2597 L 0,0 Z"
-         id="path3825" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:13"
-         style="fill:#9f9f1f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M 30.7437,45.7026 L 0,0 l -1.1197,23.1239 z"
-         id="path3827" />
-      <path
-         inkscape:connector-curvature="0"
-         inkscape:label="Face:14"
-         style="fill:#b4b424;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-opacity:1"
-         d="M -1.1197,23.1239 L 0,0 l -32.0498,44.7099 z"
-         id="path3829" />
-    </g>
-  </g>
-</svg>
-`
+export default `<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+<path style="fill:#FFDC64;" d="M452.71,157.937l-133.741-12.404L265.843,22.17c-3.72-8.638-15.967-8.638-19.686,0l-53.126,123.362
+	L59.29,157.937c-9.365,0.868-13.149,12.516-6.084,18.723l100.908,88.646l-29.531,131.029c-2.068,9.175,7.841,16.373,15.927,11.572
+	L256,339.331l115.49,68.576c8.087,4.802,17.994-2.397,15.927-11.572l-29.532-131.029l100.909-88.646
+	C465.859,170.453,462.074,158.805,452.71,157.937z"/>
+<g>
+	<path style="fill:#FFF082;" d="M119.278,17.923c6.818,9.47,26.062,50.14,37.064,73.842c1.73,3.726-2.945,7.092-5.93,4.269
+		C131.425,78.082,98.96,46.93,92.142,37.459c-5.395-7.493-3.694-17.941,3.8-23.336C103.435,8.728,113.883,10.43,119.278,17.923z"/>
+	<path style="fill:#FFF082;" d="M392.722,17.923c-6.818,9.47-26.062,50.14-37.064,73.842c-1.73,3.726,2.945,7.092,5.93,4.269
+		c18.987-17.952,51.451-49.105,58.27-58.575c5.395-7.493,3.694-17.941-3.8-23.336C408.565,8.728,398.117,10.43,392.722,17.923z"/>
+	<path style="fill:#FFF082;" d="M500.461,295.629c-11.094-3.618-55.689-9.595-81.612-12.875c-4.075-0.516-5.861,4.961-2.266,6.947
+		c22.873,12.635,62.416,34.099,73.51,37.717c8.778,2.863,18.215-1.932,21.078-10.711
+		C514.034,307.928,509.239,298.492,500.461,295.629z"/>
+	<path style="fill:#FFF082;" d="M11.539,295.629c11.094-3.618,55.689-9.595,81.612-12.875c4.075-0.516,5.861,4.961,2.266,6.947
+		c-22.873,12.635-62.416,34.099-73.51,37.717c-8.778,2.863-18.215-1.932-21.078-10.711S2.761,298.492,11.539,295.629z"/>
+	<path style="fill:#FFF082;" d="M239.794,484.31c0-11.669,8.145-55.919,13.065-81.582c0.773-4.034,6.534-4.034,7.307,0
+		c4.92,25.663,13.065,69.913,13.065,81.582c0,9.233-7.485,16.718-16.718,16.718C247.279,501.029,239.794,493.543,239.794,484.31z"/>
+</g>
+<path style="fill:#FFC850;" d="M285.161,67.03l-19.319-44.86c-3.72-8.638-15.967-8.638-19.686,0L193.03,145.532L59.29,157.937
+	c-9.365,0.868-13.149,12.516-6.084,18.723l100.908,88.646l-29.531,131.029c-2.068,9.175,7.841,16.373,15.927,11.572l15.371-9.127
+	C181.08,235.66,251.922,115.918,285.161,67.03z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>`;
