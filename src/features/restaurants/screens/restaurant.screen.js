@@ -1,24 +1,19 @@
 import React, { useContext } from 'react';
-import {
-    View,
-    FlatList
-} from 'react-native';
-import { Searchbar, ActivityIndicator, Colors } from 'react-native-paper';
+import { View } from 'react-native';
+import { ActivityIndicator, Colors } from 'react-native-paper';
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import styled from "styled-components/native";
 import { SafeArea } from "../../../components/utilities/safe_area.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { RestaurantList } from "../components/restaurant-list.styles";
 
-const SearchContainer = styled(View)`
-    justify-content: center;
-    padding: ${(props) => props.theme.sizes[1]};
-`;
+import { Search } from "../components/search.component"
 
 const LoadingContainer = styled(View)`
     position: absolute;
-    top: 50%;
+    top: 290px;
     left: 50%;
+    
 `;
 
 const Loading = styled(ActivityIndicator)`
@@ -34,16 +29,15 @@ export const RestaurantsScreen = () => {
                     <Loading size={50} animating={true} color={Colors.blue300}/>
                 </LoadingContainer>
             )
-
             }
-            <SearchContainer>
-                <Searchbar />
-            </SearchContainer>
+            <Search />
+
             <RestaurantList
                 data={restaurants}
-                renderItem={({item}) => {
-                return (
-                <RestaurantInfoCard restaurant={item}/>)}}
+                renderItem={({ item }) => {
+                    return (
+                        <RestaurantInfoCard restaurant={item} />)
+                }}
                 keyExtractor={(item) => item.name}
             />
         </SafeArea>

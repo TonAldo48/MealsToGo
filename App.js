@@ -15,7 +15,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
-
+import { LocationContextProvider } from "./src/services/location/location.context";
 
 function SettingsScreen() {
   return (
@@ -80,11 +80,13 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <RestaurantsContextProvider>
-          <NavigationContainer>
-            <MyTabs />
-          </NavigationContainer>
-        </RestaurantsContextProvider>
+        <LocationContextProvider>
+          <RestaurantsContextProvider>
+            <NavigationContainer>
+              <MyTabs />
+            </NavigationContainer>
+          </RestaurantsContextProvider>
+        </LocationContextProvider>
       </ThemeProvider>
     </>
   );
