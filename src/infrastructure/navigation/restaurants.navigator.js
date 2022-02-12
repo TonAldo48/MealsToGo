@@ -17,7 +17,7 @@ export const RestaurantsNavigator = ({}) => {
         ...TransitionPresets.ModalSlideFromBottomIOS
       }}>
       <RestaurantStack.Screen
-        name="Restaurants"
+        name="Restaurants_"
         component={RestaurantsScreen}
       />
       <RestaurantStack.Screen
