@@ -1,10 +1,30 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {
+    createStackNavigator,
+    CardStyleInterpolators,
+} from '@react-navigation/stack';
+import { SettingsScreen } from '../../features/settings/screens/settings.screen';
+import { FavouritesScreen } from '../../features/settings/screens/favourites.screen';
 
-export const SettingsNavigator = () => {
+const SettingsStack = createStackNavigator();
+
+
+export const SettingsNavigator = ({route, navigator}) => {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>SETTINGS SCREEN!!</Text>
-      </View>
+        <SettingsStack.Navigator 
+            
+            screenOptions={{
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+            }}
+        >
+            <SettingsStack.Screen
+                options={{
+                        header: ()=> null,      
+                }}
+                name='Settings'
+                component={SettingsScreen}
+            />
+         <SettingsStack.Screen name="Favourites" component={FavouritesScreen} /> 
+        </SettingsStack.Navigator>
     );
-  }
+}

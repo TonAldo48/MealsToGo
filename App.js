@@ -10,18 +10,17 @@ import {
   useFonts as useLato,
   Lato_400Regular,
 } from '@expo-google-fonts/lato';
-import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
 import { LogBox } from 'react-native';
 
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
+  "AsyncStorage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-async-storage/async-storage' instead of 'react-native'. See https://github.com/react-native-async-storage/async-storage",
 ]);
-import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
-import { LocationContextProvider } from "./src/services/location/location.context";
+
 import { Navigation } from './src/infrastructure/navigation/index';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 import * as firebase from "firebase/app";
-// Initialize Firebase
+
 const firebaseConfig = {
   apiKey: "AIzaSyDiancFZydUtcjndx0np2wowj8qDAsuV8s",
   authDomain: "mealstogo-87f5c.firebaseapp.com",
@@ -31,21 +30,11 @@ const firebaseConfig = {
   appId: "1:623086701531:web:dfee83cd683cdac955f5fe"
 };
 
-firebase.initializeApp(firebaseConfig);
+if (!firebase.getApps().length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 export default function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const auth = getAuth();
-
-  useEffect(()=>{
-    signInWithEmailAndPassword(auth, "email", "password")
-    .then((user)=>{
-      console.log(user);
-      setIsAuthenticated(true)
-    }).catch((error)=>{
-      console.log("Signing in error: ", error);
-    })
-  }, []);
 
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
@@ -57,19 +46,14 @@ export default function App() {
   if (!oswaldLoaded || !latoLoaded) {
     return null;
   }
-
   return (
     <>
       <ThemeProvider theme={theme}>
-        <FavouritesContextProvider>
-          <LocationContextProvider>
-            <RestaurantsContextProvider>
-              <Navigation />
-            </RestaurantsContextProvider>
-          </LocationContextProvider>
-        </FavouritesContextProvider>
+        <AuthenticationContextProvider>
+          <Navigation />
+        </AuthenticationContextProvider>
       </ThemeProvider>
-      <ExpoStatusBar style="auto"/>
+      <ExpoStatusBar style="auto" />
     </>
   );
 }

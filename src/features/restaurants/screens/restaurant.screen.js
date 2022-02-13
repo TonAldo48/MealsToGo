@@ -8,7 +8,7 @@ import { FavouritesContext } from '../../../services/favourites/favourites.conte
 import { FavouritesBar } from "../../../components/favourites/favourites-bar.component.js";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { RestaurantList } from "../components/restaurant-list.styles";
-
+import { FadeInView } from '../../../components/animations/fade.animations';
 import { Search } from "../components/search.component"
 
 const LoadingContainer = styled(View)`
@@ -49,7 +49,9 @@ export const RestaurantsScreen = ({ navigation }) => {
                             <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", {
                                 restaurant: item
                             })} >
+                                <FadeInView>
                                 <RestaurantInfoCard restaurant={item} />
+                                </FadeInView>
                             </TouchableOpacity>
                         )
                     }
