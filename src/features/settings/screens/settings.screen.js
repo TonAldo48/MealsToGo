@@ -6,7 +6,7 @@ import styled from 'styled-components/native';
 import { Text } from '../../../components/typography/text.component';
 import { Spacer } from '../../../components/spacer/spacer.component';
 
-const SettingsItem = styled(List.Item)`
+const DevInfoItem = styled(List.Item)`
     padding: ${props => props.theme.space[3]}
 `;
 
@@ -26,18 +26,24 @@ export const SettingsScreen = ({ navigation }) => {
       </AvatarContainer>
 
       <List.Section>
-        <SettingsItem
+        <DevInfoItem
           title='Favorites'
           description='View your favorites'
           left={(props) => <List.Icon {...props} color='black' icon='heart' />}
           onPress={() => navigation.navigate("Favourites")}
         />
-        <SettingsItem
+                <DevInfoItem
+          title='Developer Info'
+          left={(props) => <List.Icon {...props} color="black" icon='information' />}
+          onPress={() => navigation.navigate("Developer Info")}
+        />
+        <DevInfoItem
           title='Logout'
           left={(props) => <List.Icon {...props} color="black" icon='logout' />}
           onPress={onLogout}
         />
+
       </List.Section>
     </SafeArea>
   );
-} 
+  }
